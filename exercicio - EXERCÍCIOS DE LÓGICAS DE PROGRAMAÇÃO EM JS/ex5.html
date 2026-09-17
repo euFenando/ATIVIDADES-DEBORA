@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let preco = Number(prompt("Digite o preço do produto: "))
+        let quantidade = Number(prompt("Digite a quantidade comprada: "))
+
+        let total = preco * quantidade
+
+        if(quantidade > 10){
+            total = total * 0.90
+        }
+
+        document.write("O Valor total a pagar é: R$ " + total.toFixed(2))
+
+    </script>
+</body>
+
+</html>
