@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let deposito = Number(prompt("Escreva o valor mensal do seu depósito: "))
+        let taxa = Number(prompt("Escreva a taxa de juros mensal: "))
+
+        let montante = 0 + deposito
+        let juros = 0.10
+
+        let valorJuros = montante * juros
+        montante = montante + valorJuros
+
+        let mes = 1
+
+        while (mes <= 12){
+            montante = montante + deposito
+            mes++
+        }
+
+    </script>
+</body>
+
+</html>
