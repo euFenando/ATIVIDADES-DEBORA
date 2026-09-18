@@ -11,20 +11,25 @@
     <script>
 
         let deposito = Number(prompt("Escreva o valor mensal do seu depósito: "))
-        let taxa = Number(prompt("Escreva a taxa de juros mensal: "))
 
-        let montante = 0 + deposito
-        let juros = 0.10
+        let taxa = Number(prompt("Escreva a taxa de juros mensal (%): "))
 
-        let valorJuros = montante * juros
-        montante = montante + valorJuros
+        let montante = 0
 
         let mes = 1
 
-        while (mes <= 12){
+        while (mes <= 12) {
+
             montante = montante + deposito
-            mes++
+
+            let valorJuros = montante * (taxa / 100)
+
+            montante = montante + valorJuros
+
+            mes = mes + 1
         }
+
+        alert("Montante após 12 meses: R$ " + montante.toFixed(2))
 
     </script>
 </body>
