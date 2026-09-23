@@ -10,13 +10,13 @@
 <body>
     <script>
 
-        let numero = Number(prompt("Digite um número: "));
+        let nome = prompt("Digite o nome do aluno: ")
+        let nota = Number(prompt("Digite a nota do aluno: "))
 
-        let i = 1
-
-        while (i <= 10) {
-            document.write(numero + " x " + i + " = " + (numero * i) + "<br>")
-            i = i + 1
+        if (nota >= 7){
+            alert("O(a) " + nome + " está aprovado!")
+        }else{
+            alert("O(a) " + nome + " está de recuperação!")
         }
 
     </script>

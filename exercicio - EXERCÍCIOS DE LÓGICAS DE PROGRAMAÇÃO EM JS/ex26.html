@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let codigo = Number(prompt("Digite o código do produto: "))
+        let quantidade = Number(prompt("Digite a quantidade comprada: "))
+
+        let preco = 0
+
+        if (codigo == 1) {
+            preco = 20;
+
+        } else if (codigo == 2) {
+            preco = 10;
+
+        } else if (codigo == 3) {
+            preco = 5;
+
+        } else if (codigo == 4) {
+            preco = 6;
+        }
+
+        let total = preco * quantidade
+
+        alert("O valor total a ser pago é: R$ " + total);
+
+
+    </script>
+</body>
+
+</html>

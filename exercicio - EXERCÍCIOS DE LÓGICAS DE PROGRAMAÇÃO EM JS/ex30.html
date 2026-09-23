@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let macaCompradas = Number(prompt("Digite quantas maças você vai comprar: "))
+
+        let valorTotal1 = macaCompradas * 0.50
+        let valorTotal2 = macaCompradas * 0.40
+
+        if(macaCompradas < 12){
+            alert("O valor total a ser pago é de: R$ " + valorTotal1)
+        }else{
+            alert("O valor total a ser pago é de: R$ " + valorTotal2.toFixed(2))
+        }
+
+    </script>
+</body>
+
+</html>

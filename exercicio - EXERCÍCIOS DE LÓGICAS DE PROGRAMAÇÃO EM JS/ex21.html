@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let quantidade = Number(prompt("Quantas pessoas serão analisadas?"))
+
+        let menores = 0
+        let maiores = 0
+
+        for (let i = 1; i <= quantidade; i++) {
+
+            let idade = Number(prompt("Digite a idade:"))
+
+            if (idade < 18) {
+                menores++
+            } else {
+                maiores++
+            }
+        }
+
+        alert("Menores de idade: " + menores + "\nMaiores de idade: " + maiores)
+    </script>
+</body>
+
+</html>

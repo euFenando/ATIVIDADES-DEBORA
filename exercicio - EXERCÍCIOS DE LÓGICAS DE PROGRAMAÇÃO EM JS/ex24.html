@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let n1 = Number(prompt("Digite o primeiro número: "))
+        let n2 = Number(prompt("Digite o segundo número: "))
+        let n3 = Number(prompt("Digite o terceiro número: "))
+
+        if (n1 < n2 & n1 < n3) {
+
+            if (n2 < n3) {
+                alert(n1 + ", " + n2 + ", " + n3)
+            } else {
+                alert(n1 + ", " + n3 + ", " + n2);
+            }
+
+        } else if (n2 < n1 && n2 < n3) {
+            if (n1 < n3) {
+                alert(n2 + ", " + n1 + ", " + n3);
+            } else {
+                alert(n2 + ", " + n3 + ", " + n1);
+            }
+
+        } else {
+            if (n1 < n2) {
+                alert(n3 + ", " + n1 + ", " + n2);
+            } else {
+                alert(n3 + ", " + n2 + ", " + n1);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

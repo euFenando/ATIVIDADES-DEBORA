@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Lógica de Programação em JavaScript.</title>
+</head>
+
+<body>
+    <script>
+
+        let nome = prompt("Digite seu nome: ")
+        let turno = prompt("Digite seu turno (V - Vespertino ou M - Matutino): ").toUpperCase()
+
+        if(turno == "M"){
+            alert("Bom dia, " + nome)
+        }else if(turno == "V"){
+            alert("Boa tarde, " + nome)
+        }else{
+            alert("Você não está cadastrado em nenhum período")
+        }
+
+    </script>
+</body>
+
+</html>
